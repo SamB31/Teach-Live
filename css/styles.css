@@ -1,0 +1,368 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Golos Text', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(15, 25, 29);
+    
+}
+.navline {
+    width: 100%;
+    height: 1px;
+    background-color: white;
+}
+.logo {
+    margin-top: 5px;
+    width: 38%;
+    margin-bottom: 20px ;
+    cursor: pointer;
+}
+.nav-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-evenly;
+    width: 100%;
+    margin-bottom: 20px;
+    color: white;
+}
+.nav-menu li {
+    cursor: pointer;
+    font-size: 18px;
+}
+.nav-menu li:hover, .nav-menu li:active {
+    border-bottom: 1px solid white;
+    margin-bottom: -1px;
+}
+.backgroundimg {
+    background-image: url('img/lightbulb3.jpg');
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 460px;
+    width: 100%;
+}
+
+.bottomimg {
+    display: flex;
+    align-items: center;
+}
+
+.title {
+    display: flex;
+    width: 90%;
+    max-width: 100%;
+    justify-content: center;
+}
+.title h1 {
+    max-width: 100%;
+    font-size: 9.5vw;
+    margin-top: 10px;
+    text-shadow: 1px 1px 2px black;
+    font-weight: 100;
+}
+.banner h1 {
+    border-bottom: 2px solid white;
+    border-top: 2px solid white;
+    padding-right: 20px;
+    padding-left: 20px;
+    font-size: 5.5vw;
+
+}
+.backgroundimg p {
+    margin-top: 10px;
+    margin-bottom: 7px;
+    font-size: 2vw;
+}
+
+.demoWrapper {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.demoText {
+    width: 95%;
+    text-align: justify;
+    text-align-last: center;
+    font-size: 14px;
+}
+.buttons {
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.buttons p {
+    margin-top: 10px;
+    font-size: 3vw;
+}
+
+.buttons button {
+    width: 45%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: rgba(155,179,207,255);
+    border-color: rgba(155,179,207,255);
+    color: rgb(15, 25, 29);
+    border-radius: 0px;
+    font-size: 4vw;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    -webkit-appearance: none;
+    cursor: pointer;
+}
+
+.buttons button:hover {
+    background-color: rgb(15, 25, 29);
+    border-color: white;
+    color: white;
+    text-shadow: none;
+}
+
+.presenterbackimg {
+    background-image: url('img/presenter.jpg');
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 460px;
+    width: 100%;
+}
+.aboutbackimg {
+    background-image: url('img/about.jpg');
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 460px;
+    width: 100%;
+}
+.attendeebackimg {
+    background-image: url('img/attendee.jpg');
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 460px;
+    width: 100%;
+}
+
+.presenter {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.presenter h1 {
+    text-align: center;
+    margin-top: 15px;
+}
+.presenter p {
+    text-align: justify;
+    margin-top: 15px;
+}
+.presenter ul {
+    margin-top: 20px;
+    margin-left: 30px;
+}
+.presenter ul li {
+    margin-bottom: 8px;
+}
+.pricing {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.pricing h1 {
+    text-align: justify;
+    margin-top: 15px;
+}
+.pricing ul {
+    margin-top: 20px;
+    margin-left: 30px;
+}
+.pricing ul li {
+    margin-bottom: 8px;
+}
+
+
+footer {
+    border-top: 1px solid white;
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+footer a{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+footer a:hover, footer a:active {
+    border-bottom: 1px solid white !important;
+    cursor: pointer;
+}
+
+
+@media only screen and (min-width: 750px) {
+    .logo {
+        width: 25%;
+    }
+
+    .backgroundimg {
+        background-image: url('img/lightbulb.jpg');
+        min-height: 750px;
+    }
+    .banner h1 {
+        font-size: 3.5vw;
+    }
+    .backgroundimg p {
+        margin-top: 20px;
+        margin-bottom: 10px;
+        font-size: 1.2vw;
+    }
+    .demoText {
+        width: 75%;
+        font-size: 20px;
+    }
+    .buttons button {
+        font-size: 2vw;
+        text-shadow: .5px 1px 0px white;
+        width: 25%;
+    }
+    .buttons p {
+        font-size: 1.5vw;
+    }
+    .presenterbackimg {
+        min-height: 750px;   
+    }
+    .aboutbackimg {
+        min-height: 750px;   
+    }
+    .attendeebackimg {
+        min-height: 750px;   
+    }
+    .presenter {
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+    .presenter p{
+        font-size: 17px;
+    }
+    .pricing {
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+
+    footer a{
+        font-size: 18px;
+    }
+    
+}
+@media only screen and (min-width: 1400px) {
+    .logo {
+        width: 25%;
+    }
+    .title h1 {
+        max-width: 100%;
+        font-size: 5.5vw;
+        margin-top: 10px;
+        text-shadow: 1px 1px 2px black;
+        font-weight: 100;
+    }
+    .backgroundimg {
+
+        min-height: 800px;
+        width: 75%;
+    }
+    .banner h1 {
+        font-size: 2vw;
+    }
+    .backgroundimg p {
+        margin-top: 20px;
+        margin-bottom: 10px;
+        font-size: 24px;
+    }
+    .demoWrapper {
+        margin-top: 30px;
+    }
+    .demoText {
+        width: 50%;
+        font-size: 22px;
+    }
+    .buttons {
+        margin-top: 30px;
+    }
+    .buttons button {
+        font-size: 1vw;
+        text-shadow: .5px 1px 0px white;
+        width: 15%;
+    }
+    .buttons p {
+        margin-top: 10px;
+        font-size: 1vw;
+    }
+    .presenterbackimg {
+        min-height: 800px;
+        width: 65%;
+    }
+    .aboutbackimg {
+        min-height: 800px;
+        width: 65%;
+    }
+    .attendeebackimg {
+        min-height: 800px;
+        width: 65%;
+    }
+    .presenter {
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+    .presenter p{
+        font-size: 17px;
+    }
+    .pricing {
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+
+    footer a{
+        font-size: 18px;
+        
+    }
+}
+
+
+body {
+    color: white;
+    background-color: rgb(15, 25, 29);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Teach Live</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="../css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Golos+Text&display=swap" rel="stylesheet">
+</head>
+<nav class="navbar">
+  <img class="logo" src="../css/img/logo2.png" alt="" onclick="window.location.href='index.html'">
+  <ul class="nav-menu">
+    <li><a href="about.html">About</a></li>
+    <li><a href="presenter.html">Presenters</a></li>
+    <li><a href="attendees.html">Attendees</a></li>
+    <li><a href="pricing.html">Pricing</a></li>
+    <li><a href="ceu.html">CEU</a></li>
+  </ul>
+</nav>
+<body>
+  <div class="attendeebackimg"></div>
+  <div class="presenter">
+      <h1>Attend Teach Live</h1>
+      <p>Please join us for Teach Live - the ultimate conference for educators who want to advance their professional development! Whether you're a teacher, coach, or head of school, Teach Live offers an incredible opportunity to learn from top educators in a supportive and collaborative environment.<br><br>Here are some reasons why you should attend Teach Live:</p>
+      <ul>
+        <li>Earn CEUs: Attendees can earn Continuing Education Units (CEUs) for attending Teach Live sessions. These credits demonstrate your commitment to ongoing professional development and can help you advance your career.</li>
+        <li>Three tracks: Teach Live offers three tracks - coach, teacher, and head of school - so you can customize your learning experience and focus on the topics that matter most to you.</li>
+        <li>Active learning: Teach Live Sessions are interactive and engaging, so you'll get hands-on experience with the latest teaching strategies and techniques. These sessions provide an opportunity to learn from your peers and improve your craft.</li>
+        <li>Informational sessions: General Sessions cover a range of topics related to research, pedagogy, experiences, and programs. These sessions provide valuable insights into the latest trends and best practices in education, and are designed to actively engage participants.</li>
+        <li>Learn from teachers: Teach Live brings together a community of educators who are passionate about teaching and learning. You'll have the opportunity to network with other professionals, share your experiences, and learn from some of the best educators in the field.</li>
+        <li>Hone your craft: At Teach Live, you'll gain practical skills and knowledge that you can apply immediately in your classroom. Whether you're a seasoned teacher or just starting out, Teach Live can help you improve your teaching and make a lasting impact on your students.</li>
+      </ul>
+      <p>Don't miss this opportunity to advance your professional development and connect with other educators who share your passion for teaching and learning. Register now for Teach Live and take your teaching to the next level!</p>
+    </div>
+
+    <iframe
+      id="JotFormIFrame-230803868776065"
+      title="Attendees Form"
+      onload="window.parent.scrollTo(0,0)"
+      allowtransparency="true"
+      allowfullscreen="true"
+      allow="geolocation; microphone; camera"
+      src="https://form.jotform.com/230803868776065"
+      frameborder="0"
+      style="min-width:100%;max-width:100%;height:539px;border:none;"
+      scrolling="no"
+    >
+    </iframe>
+    <script type="text/javascript">
+    var ifr = document.getElementById("JotFormIFrame-230803868776065");
+    if (ifr) {
+      var src = ifr.src;
+      var iframeParams = [];
+      if (window.location.href && window.location.href.indexOf("?") > -1) {
+        iframeParams = iframeParams.concat(window.location.href.substr(window.location.href.indexOf("?") + 1).split('&'));
+      }
+      if (src && src.indexOf("?") > -1) {
+        iframeParams = iframeParams.concat(src.substr(src.indexOf("?") + 1).split("&"));
+        src = src.substr(0, src.indexOf("?"))
+      }
+      iframeParams.push("isIframeEmbed=1");
+      ifr.src = src + "?" + iframeParams.join('&');
+    }
+    window.handleIFrameMessage = function(e) {
+      if (typeof e.data === 'object') { return; }
+      var args = e.data.split(":");
+      if (args.length > 2) { iframe = document.getElementById("JotFormIFrame-" + args[(args.length - 1)]); } else { iframe = document.getElementById("JotFormIFrame"); }
+      if (!iframe) { return; }
+      switch (args[0]) {
+        case "scrollIntoView":
+          iframe.scrollIntoView();
+          break;
+        case "setHeight":
+          iframe.style.height = args[1] + "px";
+          if (!isNaN(args[1]) && parseInt(iframe.style.minHeight) > parseInt(args[1])) {
+            iframe.style.minHeight = args[1] + "px";
+          }
+          break;
+        case "collapseErrorPage":
+          if (iframe.clientHeight > window.innerHeight) {
+            iframe.style.height = window.innerHeight + "px";
+          }
+          break;
+        case "reloadPage":
+          window.location.reload();
+          break;
+        case "loadScript":
+          if( !window.isPermitted(e.origin, ['jotform.com', 'jotform.pro']) ) { break; }
+          var src = args[1];
+          if (args.length > 3) {
+              src = args[1] + ':' + args[2];
+          }
+          var script = document.createElement('script');
+          script.src = src;
+          script.type = 'text/javascript';
+          document.body.appendChild(script);
+          break;
+        case "exitFullscreen":
+          if      (window.document.exitFullscreen)        window.document.exitFullscreen();
+          else if (window.document.mozCancelFullScreen)   window.document.mozCancelFullScreen();
+          else if (window.document.mozCancelFullscreen)   window.document.mozCancelFullScreen();
+          else if (window.document.webkitExitFullscreen)  window.document.webkitExitFullscreen();
+          else if (window.document.msExitFullscreen)      window.document.msExitFullscreen();
+          break;
+      }
+      var isJotForm = (e.origin.indexOf("jotform") > -1) ? true : false;
+      if(isJotForm && "contentWindow" in iframe && "postMessage" in iframe.contentWindow) {
+        var urls = {"docurl":encodeURIComponent(document.URL),"referrer":encodeURIComponent(document.referrer)};
+        iframe.contentWindow.postMessage(JSON.stringify({"type":"urls","value":urls}), "*");
+      }
+    };
+    window.isPermitted = function(originUrl, whitelisted_domains) {
+      var url = document.createElement('a');
+      url.href = originUrl;
+      var hostname = url.hostname;
+      var result = false;
+      if( typeof hostname !== 'undefined' ) {
+        whitelisted_domains.forEach(function(element) {
+            if( hostname.slice((-1 * element.length - 1)) === '.'.concat(element) ||  hostname === element ) {
+                result = true;
+            }
+        });
+        return result;
+      }
+    };
+    if (window.addEventListener) {
+      window.addEventListener("message", handleIFrameMessage, false);
+    } else if (window.attachEvent) {
+      window.attachEvent("onmessage", handleIFrameMessage);
+    }
+    </script>
+  <footer>
+    <a href="contact.html" style="margin-right: 25px;">Contact us</a>
+    <a href="terms.html" style="margin-right: 25px;">Terms and Conditions</a>
+    <a href="about.html">About</a>
+  </footer>  
+</body>
+</html>
